@@ -13,6 +13,7 @@
 		DCF1342F1BD7A1BD0059F43D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF1342E1BD7A1BD0059F43D /* Images.xcassets */; };
 		DCF134321BD7A1BD0059F43D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF134301BD7A1BD0059F43D /* LaunchScreen.xib */; };
 		DCF1343E1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1343D1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift */; };
+		DCF134481BD85C370059F43D /* nintendoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF134471BD85C370059F43D /* nintendoJSON.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DCF134371BD7A1BD0059F43D /* JSONxUITableViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONxUITableViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF1343C1BD7A1BD0059F43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF1343D1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONxUITableViewSampleTests.swift; sourceTree = "<group>"; };
+		DCF134471BD85C370059F43D /* nintendoJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nintendoJSON.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DCF134271BD7A1BD0059F43D /* AppDelegate.swift */,
 				DCF134291BD7A1BD0059F43D /* ViewController.swift */,
 				DCF1342B1BD7A1BD0059F43D /* Main.storyboard */,
+				DCF134471BD85C370059F43D /* nintendoJSON.json */,
 				DCF1342E1BD7A1BD0059F43D /* Images.xcassets */,
 				DCF134301BD7A1BD0059F43D /* LaunchScreen.xib */,
 				DCF134251BD7A1BD0059F43D /* Supporting Files */,
@@ -194,6 +197,7 @@
 			files = (
 				DCF1342D1BD7A1BD0059F43D /* Main.storyboard in Resources */,
 				DCF134321BD7A1BD0059F43D /* LaunchScreen.xib in Resources */,
+				DCF134481BD85C370059F43D /* nintendoJSON.json in Resources */,
 				DCF1342F1BD7A1BD0059F43D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
