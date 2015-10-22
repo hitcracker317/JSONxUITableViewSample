@@ -12,6 +12,10 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
 
     var memberArray:NSMutableArray = []
     var memberDictionary:NSDictionary = [:]
+    var selectedName:String = ""
+    
+    var dictKeys = [] //すべてのキー
+    var dictValues = [] //すべての値
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,6 +33,13 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
             memberArray.addObject(key) //キーを格納
         }
         
+        //辞書データのキーのみをすべて取得する
+        dictKeys = memberDictionary.allKeys
+        println(dictKeys[0])
+        
+        //辞書データの値のみをすべて取得する
+        dictValues = memberDictionary.allValues
+        println(dictValues[0])
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,10 +60,19 @@ class ViewController: UIViewController ,UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("\(indexPath.row)番目を選択")
         
-        var memberName = memberArray[indexPath.row] as! String
-        println(memberDictionary[memberName])
+        selectedName = memberArray[indexPath.row] as! String
+        println(memberDictionary[selectedName])
+        
+        performSegueWithIdentifier("segue", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "segue"){
+            var secondViewController = segue.destinationViewController as! SecondViewController
+            secondViewController.memberDictionary = memberDictionary[selectedName] as! NSDictionary
+            secondViewController.nameString = selectedName
+        }
     }
     
     override func prefersStatusBarHidden() -> Bool {

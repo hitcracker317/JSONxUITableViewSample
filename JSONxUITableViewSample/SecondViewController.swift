@@ -10,10 +10,29 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var memberDictionary:NSDictionary = [:]
+    var nameString:String = ""
+    
+    @IBOutlet weak var memberName: UILabel!
+    @IBOutlet weak var memberSeries: UILabel!
+    @IBOutlet weak var memberBirth: UILabel!
+    @IBOutlet weak var memberGame: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        memberName.text = nameString //選択したキャラクター名
+        
+        var birthInt:Int = memberDictionary["birth"] as! Int //birthキー
+        memberBirth.text = "\(birthInt)年"
+        
+        memberSeries.text = memberDictionary["タイトル"] as? String //タイトルキー
+        
+        memberGame.text = memberDictionary["ジャンル"] as? String //ジャンルキー
+
+        
     }
 
     override func didReceiveMemoryWarning() {
