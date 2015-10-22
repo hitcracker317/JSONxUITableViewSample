@@ -14,6 +14,8 @@
 		DCF134321BD7A1BD0059F43D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCF134301BD7A1BD0059F43D /* LaunchScreen.xib */; };
 		DCF1343E1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1343D1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift */; };
 		DCF134481BD85C370059F43D /* nintendoJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF134471BD85C370059F43D /* nintendoJSON.json */; };
+		DCF1344A1BD8A61D0059F43D /* membersJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = DCF134491BD8A61D0059F43D /* membersJSON.json */; };
+		DCF1347C1BD8AD2E0059F43D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF1347B1BD8AD2E0059F43D /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		DCF1343C1BD7A1BD0059F43D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF1343D1BD7A1BD0059F43D /* JSONxUITableViewSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONxUITableViewSampleTests.swift; sourceTree = "<group>"; };
 		DCF134471BD85C370059F43D /* nintendoJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nintendoJSON.json; sourceTree = "<group>"; };
+		DCF134491BD8A61D0059F43D /* membersJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = membersJSON.json; sourceTree = "<group>"; };
+		DCF1347B1BD8AD2E0059F43D /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 			children = (
 				DCF134271BD7A1BD0059F43D /* AppDelegate.swift */,
 				DCF134291BD7A1BD0059F43D /* ViewController.swift */,
+				DCF1347B1BD8AD2E0059F43D /* SecondViewController.swift */,
 				DCF1342B1BD7A1BD0059F43D /* Main.storyboard */,
 				DCF134471BD85C370059F43D /* nintendoJSON.json */,
+				DCF134491BD8A61D0059F43D /* membersJSON.json */,
 				DCF1342E1BD7A1BD0059F43D /* Images.xcassets */,
 				DCF134301BD7A1BD0059F43D /* LaunchScreen.xib */,
 				DCF134251BD7A1BD0059F43D /* Supporting Files */,
@@ -199,6 +205,7 @@
 				DCF134321BD7A1BD0059F43D /* LaunchScreen.xib in Resources */,
 				DCF134481BD85C370059F43D /* nintendoJSON.json in Resources */,
 				DCF1342F1BD7A1BD0059F43D /* Images.xcassets in Resources */,
+				DCF1344A1BD8A61D0059F43D /* membersJSON.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF1347C1BD8AD2E0059F43D /* SecondViewController.swift in Sources */,
 				DCF1342A1BD7A1BD0059F43D /* ViewController.swift in Sources */,
 				DCF134281BD7A1BD0059F43D /* AppDelegate.swift in Sources */,
 			);
